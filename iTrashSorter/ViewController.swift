@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     var stopped = 0;
     var nameofStash = ""
     var selectedNum = 0
-    var currentTrash:UInt32 = 4;
+    var currentTrash = 4;
     var selection = 4;
     let NumberOfTrash = 3;
     var numCorrect = 0;
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         self.Display.text = ""
             START.hidden = true
         while (stopped == 0) {
-        currentTrash = arc4random() % 3
+        currentTrash = Int(arc4random()) % 3
         nameofStash = trashNames[currentTrash]
         
         }
